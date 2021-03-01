@@ -1,0 +1,35 @@
+. Upper & Lower case test
+add
+ADD
+aDd
+
+. Str test
+C''
+C'ADD'
+C' A D D '
+C 'ADD'     . not exist
+C'AD        . not exist
+D'          . not exist
+
+. Num test
+X''
+X'ADD'
+X' A D D '  . not exist
+
+. Imm test
+123
+#123
+#ABC
+
+. '' test
+''
+'ADD'       . not exist
+
+. Label test
+CADD
+LABEL1
+_LABEL1
+1LABEL      . not exist
+
+. Delimiter test
+,+-*/:;?'=#@.
